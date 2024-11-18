@@ -9,7 +9,6 @@ use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\Operation;
 use App\Exception\GreetingNotFoundException;
-use App\State\Provider\GreetingItemProvider;
 
 #[ApiResource(
     shortName: 'Greeting',
