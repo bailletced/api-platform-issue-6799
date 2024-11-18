@@ -4,8 +4,11 @@ api_platform:
     # Mercure integration, remove if unwanted
     mercure:
         include_type: true
+    mapping:
+        paths:
+            - "%kernel.project_dir%/src/Resource/"
     # Good defaults for REST APIs
     defaults:
         stateless: true
         cache_headers:
-            vary: ['Content-Type', 'Authorization', 'Origin']
+            vary: ["Content-Type", "Authorization", "Origin"]

@@ -9,7 +9,6 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * This is a dummy entity. Remove it!
  */
-#[ApiResource(mercure: true)]
 #[ORM\Entity]
 class Greeting
 {
@@ -19,7 +18,7 @@ class Greeting
     #[ORM\Id]
     #[ORM\Column(type: 'integer')]
     #[ORM\GeneratedValue(strategy: 'SEQUENCE')]
-    private ?int $id = null;
+    public ?int $id = null;
 
     /**
      * A nice person
